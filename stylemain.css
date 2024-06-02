@@ -1,0 +1,246 @@
+*{
+    /* O ZERO colocado em margin e padding serve para não alterar a página
+     independente do navegador que esteja usando*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1000px){
+    .cards  {
+        flex-direction: column;
+    }
+}
+
+/*SESSÃO DE NAV*/
+
+h1{
+    background-color: white;
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.separadorwhite{
+    background-color: white;
+    padding-top: 30px;
+}
+
+/*SESSÃO DE APRESENTAÇÃO*/
+.conteudo{
+    background-color: black;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+.conteudo h2{
+    background-color: black;
+    color: aliceblue;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.conteudo p{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+/*SESSÃO CONTOS*/
+
+.cards{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-color: #191919;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 10%;
+    width: 25em;
+    padding: 20px 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo-conto{
+    background-color: #191919;
+}
+
+.titulo-conto h2{
+    background-color: #191919;
+    color: aliceblue;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.titulo-conto p{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cards div:hover{
+    background-color: wheat;
+    transition: 0.5s;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.card img{
+    height: 200px;
+    border-radius: 7%;
+    margin-top: 20px;
+}
+
+.card h4{
+    margin-top: 1em;
+    color: black;
+}
+
+.card p{
+    color: gray;
+    margin-top: 20px;
+    margin: 20px;
+    font-style: italic;
+}
+
+.separadorblack{
+    background-color: black;
+    padding-top: 10px;
+}
+/*SESSÃO SOBRE MIM*/
+
+.conheca-me h2{
+    background-color:white;
+    color: black;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.sobre-mim{
+    background-color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.sobre{
+    background-color:white;
+    width: 40em;
+    padding: 20px 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.sobre img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 7px solid gray;
+    margin: auto;
+}
+
+.sobre p{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*SESSÃO ACERVO*/
+
+.acervo{
+    margin-bottom: 100px;
+}
+
+table, th, td{
+    color:white;
+    border: 1px solid white;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+    
+th{
+    font-weight: bold;
+}
+    
+tr:nth-child(even) {
+    background-color: #191919;
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: gray;
+    color: #191919;
+}    
+
+/*SESSÃO DE RODAPÉ*/
+
+footer{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    background-color: white;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+.social img{
+    height: 50px;
+}
+.social a{
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+}
